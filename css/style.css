@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins', sans-serif;
+}
+
+body{
+    color: #ededed;
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* .header-1{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #1e1e1e;
+}
+
+.head{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+
+}
+
+
+
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+
+.navbar a:hover{
+    color:#4a7c8c;
+    font-weight: bolder;
+    
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(https://c4.wallpaperflare.com/wallpaper/142/751/831/landscape-anime-digital-art-fantasy-art-wallpaper-preview.jpg) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;    
+}
+
+.home-content{
+    max-width: 600px;
+
+}
+
+.home-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.home-content h3 span{
+    color: #2e6580;
+    
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content p{
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+
+}
+
+.home-sci a{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ background: transparent;
+ border: 2px solid #4a7c8c;
+ border-radius: 50%;
+ font-size: 20px;
+ color: #4a7c8c;
+ text-decoration: none;
+ margin: 30px 15px 30px 0;
+ transition: .5s ease;
+ opacity: 0;
+ animation: slideLeft 1s ease forwards;
+ animation-delay: calc(.2s*var(--i));
+
+}
+
+.home-sci a:hover{
+    background: #4a7c8c;
+    color: #10e6ea;
+    box-shadow: 0 0 20px #277c7e;
+}
+
+.btn-box{
+    display:  inline-block;
+    padding: 12px 28px;
+    background: transparent;
+    border: 2px solid #4a7c8c;
+    border-radius: 40px;
+    font-size: px;
+    color:#4a7c8c ;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: .2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef
+}
+
+.btn-box:hover{
+    box-shadow: 0 0 5px #277c7e,
+    0 0 25px #277c7e, 0 0 50px #277c7e,
+    0 0 100px #277c7e, 0 0 200px #277c7e;
+    background: #4a7c8c;
+    color:#10e6ea ;
+}
+
+
+@keyframes slideRight {
+   0%{
+    transform: translateX(-100px);
+    opacity: 0;
+   } 
+   100%{
+    transform: translateX(0px);
+    opacity: 1;
+   } 
+}
+@keyframes slideLeft {
+    0%{
+     transform: translateX(100px);
+     opacity: 0;
+    } 
+    100%{
+     transform: translateX(0px);
+     opacity: 1;
+    } 
+ }
+
+@keyframes slideTop{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+       } 
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+       } 
+}
+
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+       } 
+       100%{
+        transform: translateY(0px);
+        opacity: 1;
+       } 
+}
+
+
+/* Skills */
+.skill{
+    background: url('https://c4.wallpaperflare.com/wallpaper/997/1012/970/world-of-warcraft-battle-for-azeroth-video-games-warcraft-alliance-wallpaper-preview.jpg')no-repeat;
+    /* https://c4.wallpaperflare.com/wallpaper/97/94/464/neon-genesis-evangelion-eva-unit-01-clouds-sky-wallpaper-preview.jpg */
+    background-size: cover;
+    /* background: linea-gradient(to right, #171748,#eba266); */
+    backdrop-filter: blur(1rem);
+    min-height: 100vh;
+  
+    
+}
+.skill h2{
+    text-align: center;
+    padding-top: 7rem;
+    font-weight: 700;
+    font-size: 6rem;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .1s;
+
+    
+}
+.skills-card{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 7rem;
+    z-index: 1000;
+    
+    
+}
+.container {
+    
+    width: 250px;
+    height: 350px;
+    background-color: rgb(204, 194, 194);
+    color: #000;
+    border-radius: 36px;
+    box-shadow: 0px 45px 65px 0px rgba(0,0,0,0.5),
+    0px 35px 22px 0px rgba(0,0,0,0.16);
+  }
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
+    .element {
+        -webkit-backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
+      }
+}
+
+
+  .card-name{
+    text-align: center;
+    font-size: 20px;
+    margin: 1rem;
+  }
+
+  .skill-icons{
+
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .cpp{
+    color:rgb(81, 81, 177)
+  }
+  .py{
+    background: linear-gradient( #f3f321,  #447dee); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text; 
+  }
+  .js{
+    color: #E9D44D;
+  }
+  .ts{
+    color: #0176C7;
+  }
+  .php{
+    color: rgb(115,118,172);
+  }
+ .html{
+    color:#dd4a24;
+ }
+ .css{
+    color:#0168BB;
+ }
+ .tailwind{
+    color:rgb(56,189,248);
+ }
+ .boots{
+    color:#7c1ce6;
+ }
+ .jq{
+    color:#0563a4;
+ }
+ .react{
+    color:#01d1f7;
+ }
+ .redux{
+    color:#6f43b5;
+ }
+ .figma{
+    color:#ed5c3c;
+ }
+ .node{
+    color:#4c983d
+ }
+ .flask{
+    color:#8fd1d2
+ }
+ .aws{
+    color:#f79501
+ }
+ .mdb{
+    color:#4fa742;
+ }
+ .postsql{
+    color:#244b7f;
+ }
+ .fdb{
+    color:#f6a213
+ }
+ 
+
+
